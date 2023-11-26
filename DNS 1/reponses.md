@@ -52,10 +52,10 @@ def cree_tableau(n):
 ---
 Q6:
 - [x] A. compteurs[k] = nbr_de(k, tab)
-- [] B. compteurs[nbr_de(k, tab)] = k
-- [] C. compteurs[k] = k
-- [] D. compteurs[k] = tab[k]
-- [] E. compteurs[tab[k]] = nbr_de(k, tab)
+- [ ] B. compteurs[nbr_de(k, tab)] = k
+- [ ] C. compteurs[k] = k
+- [ ] D. compteurs[k] = tab[k]
+- [ ] E. compteurs[tab[k]] = nbr_de(k, tab)
 
 ---
 Q7:
