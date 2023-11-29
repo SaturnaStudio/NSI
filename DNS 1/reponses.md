@@ -21,8 +21,10 @@ def nbr_de_neuf(tab):
     """ list[int] -> int
     Renvoie le nombre de 9 dans tab
     """
-    neufs = [i for i in tab if i == 9]
-    return len(neufs)
+    
+    
+    nombre_de_neufs = [nombre for nombre in tab if nombre == 9]
+    return len(nombre_de_neufs)
 ```
 
 --- 
@@ -33,7 +35,8 @@ def nbr_de(k, tab):
     Renvoie le nombre d'occurence du nombre k dans tab
     """
 
-    neufs = [i for i in tab if i == k]
+    occurences = [nombre for nombre in tab if nombre == k]
+
     return len(neufs)
 ```
 
@@ -45,7 +48,7 @@ def cree_tableau(n):
     préconditions: n >= 0
     Renvoie un tableau de taille n ne contenant que des 0
     """
-    tableau = [0 for nbr in range(n)]
+    tableau = [0 for nombre in range(n)]
     return tableau
 ```
 
@@ -66,6 +69,8 @@ def nbr_de_nbr(tab):
     """
     compteurs = cree_tableau(101)
     nbr_table = len(tab)
+
+
     for i in range(nbr_table+1):
         compteurs[i] = nbr_de(i, tab)
     return compteurs
@@ -78,10 +83,12 @@ def nbr_de_nbr(tab):
     """ list[int] -> list[int]
     precondition: tab ne contient que des nombres entre 0 et 100
     """
-    compteurs = cree_tableau(101)
+    compteur = cree_tableau(101)
+
+
     for i in tab:
-        compteurs[i] += 1
-    return compteurs
+        compteur[i] += 1
+    return compteur
 ```
 
 ---
