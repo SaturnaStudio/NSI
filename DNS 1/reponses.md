@@ -11,7 +11,7 @@ def filtre_0_100(tab):
     """ list[int] -> list[int]
     Renvoie les éléments de tab compris entre 0 et 100
     """
-    return [i for i in tab if i >= 0 and i <= 100 ]
+    return [nbr for nbr in tab if nbr >= 0 and nbr <= 100 ]
 ```
 
 ---
