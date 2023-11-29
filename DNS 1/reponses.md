@@ -45,7 +45,7 @@ def cree_tableau(n):
     préconditions: n >= 0
     Renvoie un tableau de taille n ne contenant que des 0
     """
-    tableau = [0 for _ in range(n)]
+    tableau = [0 for nbr in range(n)]
     return tableau
 ```
 
@@ -65,7 +65,8 @@ def nbr_de_nbr(tab):
     precondition: tab ne contient que des nombres entre 0 et 100
     """
     compteurs = cree_tableau(101)
-    for i in range(len(tab)+1):
+    nbr_table = len(tab)
+    for i in range(nbr_table+1):
         compteurs[i] = nbr_de(i, tab)
     return compteurs
 ```
